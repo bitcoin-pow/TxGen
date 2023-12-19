@@ -8,10 +8,11 @@ if __name__ == '__main__':
     # rpc_user and rpc_password are set in the bitcoin-pow.conf file
     rpc_user = "USER"
     rpc_pass = "PASS"
-    rpc_host = "127.0.0.1"
+    
     btcw_receive_address = "BTCW_RX_ADDRESS_HERE"
     tx_fee   = "0.0001"
 
+    rpc_host = "127.0.0.1"
     prevHeight = 0
     rpc_connection = AuthServiceProxy(f"http://{rpc_user}:{rpc_pass}@{rpc_host}:9332", timeout=1000000)
     while 1:
