@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
     rpc_host = "127.0.0.1"
     prevHeight = 0
-    rpc_connection = AuthServiceProxy(f"http://{rpc_user}:{rpc_pass}@{rpc_host}:9332", timeout=1000000)
+    rpc_connection = AuthServiceProxy("http://{rpc_user}:{rpc_pass}@{rpc_host}:9332", timeout=1000000)
     while 1:
 
         commands = [["getblockcount"]]
