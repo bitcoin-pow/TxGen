@@ -1,3 +1,25 @@
+# THIS REPO IS DEPRECATED
+Use the tx generation feature inside the wallet instead. Use the following release or later:
+https://github.com/fluffyfunction/BitcoinPoW/releases/tag/v0.21.3_final
+
+Create transactions Examples: Go to Window->Console and type the following commands:
+
+Send BTCW transactions forever with amount of 0.00001, a fee of 500 satoshi/vB, and RBF enabled
+```
+tx "191daFa9r8b5UbUD2iuFzqdEEVUcTUFB1S" 0.00001 500
+```
+
+Send BTCW transactions 7 times with amount of 0.00001, a fee of 500 satoshi/vB, and RBF enabled
+```
+tx "191daFa9r8b5UbUD2iuFzqdEEVUcTUFB1S" 0.00001 500 7
+```
+
+Stop sending BTCW transactions
+```
+tx "191daFa9r8b5UbUD2iuFzqdEEVUcTUFB1S" 0.00001 500 0
+```
+
+
 # TxGen
 Transaction generator for mining BTCW
 
